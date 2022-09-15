@@ -1,5 +1,8 @@
 # ISWC22-HAR
-This is the code for our paper TinyHAR: A Lightweight Deep Learning Model Designed for Human Activity Recognition ( [ISWC](http://www.iswc.net) 2022 Best Paper Award)
+This is the code for our papers 
+
+1. TinyHAR: A Lightweight Deep Learning Model Designed for Human Activity Recognition ( [ISWC](http://www.iswc.net) 2022 Best Paper Award)
+2. Improving HAR Models by Learnable Sparse Wavelet Layer 
 
 Sensor streams can only be represented in abstract ways and the recorded data typically cannot be interpreted easily by humans. This problem leads to difficulties in post-hoc annotation, which limits the availability and size of annotated Hunman Activity Recognition (HAR) datasets. Given the complexity of sensor-based HAR tasks, such large datasets are typically necessary to apply SOTA machine learning. Although Deep Learning (DL) models have shown extraordinary performance on HAR tasks, most DL models for HAR have large sizes (numerous trainable network parameters). When available data is limited, overly large network parameters make the model prone to overfitting, limiting or even jeopardizing its generalization performance. The second challenge arises from the fact that wearable devices that are intended to use the HAR model typically have limited resources. As a result, an excessive number of network parameters complicates the deployment of such models on end devices. 
 
@@ -12,6 +15,7 @@ TinyHAR: A Lightweight Deep Learning Model Designed for Human Activity Recogniti
 Zhou, Y.; Zhao, H.; Huang, Y.; Hefenbrock, M.; Riedel, T.; Beigl, M.
 2022. International Symposium on Wearable Computers (ISWC’22) , Atlanta, GA and Cambridge, UK, September 11-15, 2022, Association for Computing Machinery (ACM). doi:10.1145/3544794.3558467 
 ```
+
 
 # How to use
 
