@@ -1,0 +1,45 @@
+deepconvlstm:
+  nb_conv_blocks: 2
+  nb_filters: 64
+  dilation: 1
+  batch_norm: 0
+  filter_width: 5
+  nb_layers_lstm: 1
+  drop_prob: 0.5
+  nb_units_lstm: 128
+
+
+attend:
+  hidden_dim: 128
+  filter_num: 64
+  filter_size: 5
+  enc_num_layers: 2
+  dropout: 0.5
+  dropout_rnn: 0.25
+  dropout_cls: 0.5
+  activation: "ReLU"
+  sa_div: 1
+
+sahar:
+  nb_filters: 128
+
+tinyhar:
+  filter_num: 20
+
+deepconvlstm_attn:
+  nb_conv_blocks: 2
+  nb_filters: 64
+  dilation: 1
+  batch_norm: 0
+  filter_width: 5
+  nb_layers_lstm: 2
+  drop_prob: 0.5
+  nb_units_lstm: 128
+
+mcnn:
+  nb_conv_blocks: 2
+  nb_filters: 64
+  dilation: 1
+  batch_norm: 0
+  filter_width: 5
+  drop_prob: 0.25

@@ -1,0 +1,63 @@
+hapt:
+  filename: "HAPThar_Dataset"
+  sampling_freq: 50
+  num_classes: 12
+  num_channels: 6
+  window_seconds: 2.56
+
+oppo:
+  filename: "Opportunity_Dataset/dataset"
+  sampling_freq: 30
+  num_classes: 18
+  num_channels: 77
+  window_seconds: 1
+
+
+wisdm:
+  filename: "WISDM_Dataset"
+  sampling_freq: 20
+  num_classes: 6
+  num_channels: 3
+  window_seconds: 5
+
+dg:
+  filename: "Daphnet_Dataset/dataset"
+  sampling_freq: 64
+  num_classes: 2
+  num_channels: 9
+  window_seconds: 1
+
+uschad:
+  filename: "USC_HAD_Dataset"
+  sampling_freq: 100
+  num_classes: 12
+  num_channels: 6
+  window_seconds: 1
+
+pamap2:
+  filename: "PAMAP2_Dataset/Protocol"
+  sampling_freq: 33
+  num_classes: 12
+  num_channels: 18
+  window_seconds: 5.12
+
+rw:
+  filename: "RWhar_Dataset"
+  sampling_freq: 50
+  num_classes: 8
+  num_channels: 21
+  window_seconds: 2.56
+
+skodar:
+  filename: "Skoda HAR Dataset"
+  sampling_freq: 33
+  num_classes: 10
+  num_channels: 30
+  window_seconds: 2.56
+
+dsads:
+  filename: "DSADS_Dataset"
+  sampling_freq: 25
+  num_classes: 19
+  num_channels: 45
+  window_seconds: 5

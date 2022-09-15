@@ -1,0 +1,675 @@
+Use GPU: cuda:0
+clone the  wavefiler weight
+Wavelet Filtering Regularization
+Build the DeepConvLSTM model!
+Done!
+Parameter : 25071
+Set the seed as :  1
+ ----------------------- load all the data -------------------
+-----------------------Sliding file are generated -----------------------
+-----------------------Sliding file are generated -----------------------
+================ LOCV Mode ====================
+================ 10 CV ======================
+================ the 0 th CV Experiment ================ 
+Leave one Out Experiment : The 1 Part as the test
+[-] Target sampling weights:  [0.00067114 0.00068353 0.00073529 0.00061125 0.00056211 0.00056948
+ 0.00740741 0.01020408 0.00636943 0.00735294 0.00537634 0.00699301]
+Train data number :  10339
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1149
+Test data number :  6632
+================Skip the 0 CV Experiment================
+================Skip the 0 CV Experiment Fine Tuning================
+================ the 1 th CV Experiment ================ 
+Leave one Out Experiment : The 2 Part as the test
+[-] Target sampling weights:  [0.00065147 0.00067295 0.00073475 0.00062267 0.0005571  0.00056915
+ 0.00757576 0.00952381 0.00632911 0.00704225 0.00571429 0.0070922 ]
+Train data number :  10393
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1155
+Test data number :  6311
+================Skip the 1 CV Experiment================
+================Skip the 1 CV Experiment Fine Tuning================
+================ the 2 th CV Experiment ================ 
+Leave one Out Experiment : The 3 Part as the test
+[-] Target sampling weights:  [0.00064103 0.00067295 0.00071942 0.00061614 0.00056054 0.0005685
+ 0.00689655 0.00952381 0.00636943 0.00714286 0.00561798 0.00724638]
+Train data number :  10465
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1163
+Test data number :  5897
+================Skip the 2 CV Experiment================
+================Skip the 2 CV Experiment Fine Tuning================
+================ the 3 th CV Experiment ================ 
+Leave one Out Experiment : The 4 Part as the test
+[-] Target sampling weights:  [0.00064725 0.00067114 0.00072833 0.00061958 0.00055586 0.00057438
+ 0.00724638 0.00970874 0.00653595 0.00675676 0.00558659 0.00724638]
+Train data number :  10421
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1158
+Test data number :  6195
+================Skip the 3 CV Experiment================
+================Skip the 3 CV Experiment Fine Tuning================
+================ the 4 th CV Experiment ================ 
+Leave one Out Experiment : The 5 Part as the test
+[-] Target sampling weights:  [0.00065062 0.00067889 0.00072464 0.00062422 0.00056497 0.00057176
+ 0.00735294 0.01020408 0.00649351 0.00680272 0.00571429 0.00735294]
+Train data number :  10357
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1151
+Test data number :  6522
+================Skip the 4 CV Experiment================
+================Skip the 4 CV Experiment Fine Tuning================
+================ the 5 th CV Experiment ================ 
+Leave one Out Experiment : The 6 Part as the test
+[-] Target sampling weights:  [0.00065445 0.00067114 0.00074129 0.00063573 0.00058005 0.00057904
+ 0.00746269 0.00980392 0.00649351 0.00719424 0.00568182 0.00724638]
+Train data number :  10234
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1138
+Test data number :  7257
+================Skip the 5 CV Experiment================
+================Skip the 5 CV Experiment Fine Tuning================
+================ the 6 th CV Experiment ================ 
+Leave one Out Experiment : The 7 Part as the test
+[-] Target sampling weights:  [0.00064977 0.00067522 0.00071994 0.00064683 0.00057971 0.00058582
+ 0.008      0.00990099 0.00653595 0.0070922  0.00588235 0.00704225]
+Train data number :  10219
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1136
+Test data number :  7352
+================Skip the 6 CV Experiment================
+================Skip the 6 CV Experiment Fine Tuning================
+================ the 7 th CV Experiment ================ 
+Leave one Out Experiment : The 8 Part as the test
+[-] Target sampling weights:  [0.00065317 0.00068027 0.00072727 0.00063857 0.00056754 0.00058207
+ 0.00735294 0.00970874 0.00649351 0.00724638 0.00558659 0.00704225]
+Train data number :  10274
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1142
+Test data number :  7032
+================Skip the 7 CV Experiment================
+================Skip the 7 CV Experiment Fine Tuning================
+================ the 8 th CV Experiment ================ 
+Leave one Out Experiment : The 9 Part as the test
+[-] Target sampling weights:  [0.0006605  0.00068681 0.00073692 0.00063898 0.00057637 0.00058582
+ 0.0075188  0.00970874 0.00649351 0.00704225 0.00552486 0.00719424]
+Train data number :  10186
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1132
+Test data number :  7568
+================Skip the 8 CV Experiment================
+================Skip the 8 CV Experiment Fine Tuning================
+================ the 9 th CV Experiment ================ 
+Leave one Out Experiment : The 10 Part as the test
+[-] Target sampling weights:  [0.00065617 0.00068353 0.00073801 0.00063331 0.00056593 0.0005848
+ 0.00763359 0.01010101 0.00680272 0.00675676 0.00534759 0.00694444]
+Train data number :  10254
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1140
+Test data number :  7165
+================Skip the 9 CV Experiment================
+================Skip the 9 CV Experiment Fine Tuning================
+Use GPU: cuda:0
+clone the  wavefiler weight
+Wavelet Filtering Regularization
+Build the DeepConvLSTM model!
+Done!
+Parameter : 25071
+Set the seed as :  2
+ ----------------------- load all the data -------------------
+-----------------------Sliding file are generated -----------------------
+-----------------------Sliding file are generated -----------------------
+================ LOCV Mode ====================
+================ 10 CV ======================
+================ the 0 th CV Experiment ================ 
+Leave one Out Experiment : The 1 Part as the test
+[-] Target sampling weights:  [0.00067024 0.00068399 0.00073964 0.00061087 0.00055866 0.00056786
+ 0.00735294 0.01020408 0.00617284 0.0070922  0.00584795 0.00729927]
+Train data number :  10339
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1149
+Test data number :  6632
+================Skip the 0 CV Experiment================
+================Skip the 0 CV Experiment Fine Tuning================
+================ the 1 th CV Experiment ================ 
+Leave one Out Experiment : The 2 Part as the test
+[-] Target sampling weights:  [0.00065317 0.00066711 0.00073314 0.00061501 0.00056085 0.00056657
+ 0.00793651 0.01       0.00653595 0.00740741 0.00581395 0.00719424]
+Train data number :  10393
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1155
+Test data number :  6311
+================Skip the 1 CV Experiment================
+================Skip the 1 CV Experiment Fine Tuning================
+================ the 2 th CV Experiment ================ 
+Leave one Out Experiment : The 3 Part as the test
+[-] Target sampling weights:  [0.00064226 0.00066357 0.0007326  0.0006192  0.00055866 0.00056402
+ 0.00689655 0.00961538 0.00645161 0.00729927 0.00568182 0.0070922 ]
+Train data number :  10465
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1163
+Test data number :  5897
+================Skip the 2 CV Experiment================
+================Skip the 2 CV Experiment Fine Tuning================
+================ the 3 th CV Experiment ================ 
+Leave one Out Experiment : The 4 Part as the test
+[-] Target sampling weights:  [0.00064392 0.00067476 0.00072098 0.00061767 0.00055741 0.00057537
+ 0.00694444 0.00980392 0.00666667 0.00740741 0.00568182 0.0070922 ]
+Train data number :  10421
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1158
+Test data number :  6195
+================Skip the 3 CV Experiment================
+================Skip the 3 CV Experiment Fine Tuning================
+================ the 4 th CV Experiment ================ 
+Leave one Out Experiment : The 5 Part as the test
+[-] Target sampling weights:  [0.00065359 0.00067705 0.00073206 0.00061538 0.00056465 0.00057504
+ 0.0070922  0.01041667 0.00662252 0.00714286 0.00552486 0.00714286]
+Train data number :  10357
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1151
+Test data number :  6522
+================Skip the 4 CV Experiment================
+================Skip the 4 CV Experiment Fine Tuning================
+================ the 5 th CV Experiment ================ 
+Leave one Out Experiment : The 6 Part as the test
+[-] Target sampling weights:  [0.00064392 0.00068213 0.00074239 0.00062578 0.00058514 0.00058106
+ 0.00740741 0.01       0.00684932 0.00740741 0.00568182 0.00675676]
+Train data number :  10234
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1138
+Test data number :  7257
+================Skip the 5 CV Experiment================
+================Skip the 5 CV Experiment Fine Tuning================
+================ the 6 th CV Experiment ================ 
+Leave one Out Experiment : The 7 Part as the test
+[-] Target sampling weights:  [0.00063532 0.00067249 0.00073801 0.00063573 0.00058207 0.00059207
+ 0.00763359 0.01052632 0.00662252 0.00763359 0.00574713 0.0070922 ]
+Train data number :  10219
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1136
+Test data number :  7352
+================Skip the 6 CV Experiment================
+================Skip the 6 CV Experiment Fine Tuning================
+================ the 7 th CV Experiment ================ 
+Leave one Out Experiment : The 8 Part as the test
+[-] Target sampling weights:  [0.00063857 0.00067385 0.00074683 0.00062814 0.00057274 0.00058377
+ 0.00735294 0.01010101 0.00662252 0.00735294 0.00584795 0.0070922 ]
+Train data number :  10274
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1142
+Test data number :  7032
+================Skip the 7 CV Experiment================
+================Skip the 7 CV Experiment Fine Tuning================
+================ the 8 th CV Experiment ================ 
+Leave one Out Experiment : The 9 Part as the test
+[-] Target sampling weights:  [0.00064558 0.00068681 0.00074683 0.00063131 0.00058241 0.00058789
+ 0.00740741 0.01020408 0.00666667 0.00724638 0.00558659 0.00714286]
+Train data number :  10186
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1132
+Test data number :  7568
+================Skip the 8 CV Experiment================
+================Skip the 8 CV Experiment Fine Tuning================
+================ the 9 th CV Experiment ================ 
+Leave one Out Experiment : The 10 Part as the test
+[-] Target sampling weights:  [0.0006435  0.00068399 0.0007446  0.00062735 0.00057438 0.00058445
+ 0.00740741 0.01052632 0.00684932 0.00689655 0.00546448 0.00689655]
+Train data number :  10254
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1140
+Test data number :  7165
+================Skip the 9 CV Experiment================
+================Skip the 9 CV Experiment Fine Tuning================
+Use GPU: cuda:0
+clone the  wavefiler weight
+Wavelet Filtering Regularization
+Build the DeepConvLSTM model!
+Done!
+Parameter : 25071
+Set the seed as :  3
+ ----------------------- load all the data -------------------
+-----------------------Sliding file are generated -----------------------
+-----------------------Sliding file are generated -----------------------
+================ LOCV Mode ====================
+================ 10 CV ======================
+================ the 0 th CV Experiment ================ 
+Leave one Out Experiment : The 1 Part as the test
+[-] Target sampling weights:  [0.00066489 0.00067889 0.00073964 0.00061538 0.00056306 0.00056593
+ 0.00740741 0.01052632 0.00636943 0.00699301 0.00574713 0.00724638]
+Train data number :  10339
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1149
+Test data number :  6632
+================Skip the 0 CV Experiment================
+================Skip the 0 CV Experiment Fine Tuning================
+================ the 1 th CV Experiment ================ 
+Leave one Out Experiment : The 2 Part as the test
+[-] Target sampling weights:  [0.00065232 0.0006689  0.00073529 0.0006169  0.00056148 0.00056818
+ 0.0075188  0.00961538 0.00625    0.00724638 0.00588235 0.00724638]
+Train data number :  10393
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1155
+Test data number :  6311
+================Skip the 1 CV Experiment================
+================Skip the 1 CV Experiment Fine Tuning================
+================ the 2 th CV Experiment ================ 
+Leave one Out Experiment : The 3 Part as the test
+[-] Target sampling weights:  [0.00064309 0.00067295 0.00072516 0.0006079  0.00056054 0.00056915
+ 0.0075188  0.00961538 0.00632911 0.00704225 0.00571429 0.00680272]
+Train data number :  10465
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1163
+Test data number :  5897
+================Skip the 2 CV Experiment================
+================Skip the 2 CV Experiment Fine Tuning================
+================ the 3 th CV Experiment ================ 
+Leave one Out Experiment : The 4 Part as the test
+[-] Target sampling weights:  [0.00064392 0.00067159 0.00072307 0.00062578 0.00055991 0.0005711
+ 0.00757576 0.00990099 0.00657895 0.00680272 0.00534759 0.00704225]
+Train data number :  10421
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1158
+Test data number :  6195
+================Skip the 3 CV Experiment================
+================Skip the 3 CV Experiment Fine Tuning================
+================ the 4 th CV Experiment ================ 
+Leave one Out Experiment : The 5 Part as the test
+[-] Target sampling weights:  [0.00064309 0.00067659 0.00073368 0.00062344 0.0005685  0.00057176
+ 0.00740741 0.01010101 0.00657895 0.00714286 0.00555556 0.00699301]
+Train data number :  10357
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1151
+Test data number :  6522
+================Skip the 4 CV Experiment================
+================Skip the 4 CV Experiment Fine Tuning================
+================ the 5 th CV Experiment ================ 
+Leave one Out Experiment : The 6 Part as the test
+[-] Target sampling weights:  [0.00064599 0.00067295 0.00073801 0.00063052 0.00059067 0.00057803
+ 0.00787402 0.01041667 0.00657895 0.00704225 0.00561798 0.0070922 ]
+Train data number :  10234
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1138
+Test data number :  7257
+================Skip the 5 CV Experiment================
+================Skip the 5 CV Experiment Fine Tuning================
+================ the 6 th CV Experiment ================ 
+Leave one Out Experiment : The 7 Part as the test
+[-] Target sampling weights:  [0.00064267 0.000668   0.00072886 0.00063816 0.00058962 0.00058997
+ 0.00775194 0.01020408 0.00662252 0.00729927 0.00568182 0.00689655]
+Train data number :  10219
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1136
+Test data number :  7352
+================Skip the 6 CV Experiment================
+================Skip the 6 CV Experiment Fine Tuning================
+================ the 7 th CV Experiment ================ 
+Leave one Out Experiment : The 8 Part as the test
+[-] Target sampling weights:  [0.00064475 0.00066756 0.00073746 0.00063291 0.00057837 0.00058072
+ 0.00775194 0.01041667 0.00649351 0.00740741 0.00552486 0.00699301]
+Train data number :  10274
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1142
+Test data number :  7032
+================Skip the 7 CV Experiment================
+================Skip the 7 CV Experiment Fine Tuning================
+================ the 8 th CV Experiment ================ 
+Leave one Out Experiment : The 9 Part as the test
+[-] Target sampling weights:  [0.00065402 0.00067613 0.00074405 0.00064103 0.00058445 0.00057971
+ 0.00793651 0.01020408 0.00649351 0.00746269 0.00546448 0.00699301]
+Train data number :  10186
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1132
+Test data number :  7568
+================Skip the 8 CV Experiment================
+================Skip the 8 CV Experiment Fine Tuning================
+================ the 9 th CV Experiment ================ 
+Leave one Out Experiment : The 10 Part as the test
+[-] Target sampling weights:  [0.00065104 0.00067476 0.00074239 0.00063091 0.00057904 0.00058038
+ 0.00787402 0.01041667 0.00653595 0.0070922  0.00526316 0.00680272]
+Train data number :  10254
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1140
+Test data number :  7165
+================Skip the 9 CV Experiment================
+================Skip the 9 CV Experiment Fine Tuning================
+Use GPU: cuda:0
+clone the  wavefiler weight
+Wavelet Filtering Regularization
+Build the DeepConvLSTM model!
+Done!
+Parameter : 25071
+Set the seed as :  4
+ ----------------------- load all the data -------------------
+-----------------------Sliding file are generated -----------------------
+-----------------------Sliding file are generated -----------------------
+================ LOCV Mode ====================
+================ 10 CV ======================
+================ the 0 th CV Experiment ================ 
+Leave one Out Experiment : The 1 Part as the test
+[-] Target sampling weights:  [0.00067114 0.00067431 0.00074571 0.00061805 0.00055928 0.0005637
+ 0.00735294 0.01020408 0.00649351 0.00719424 0.00543478 0.00746269]
+Train data number :  10339
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1149
+Test data number :  6632
+================Skip the 0 CV Experiment================
+================Skip the 0 CV Experiment Fine Tuning================
+================ the 1 th CV Experiment ================ 
+Leave one Out Experiment : The 2 Part as the test
+[-] Target sampling weights:  [0.00064433 0.00067295 0.00073153 0.0006192  0.00055617 0.00056948
+ 0.008      0.01010101 0.00657895 0.0070922  0.00568182 0.00793651]
+Train data number :  10393
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1155
+Test data number :  6311
+================Skip the 1 CV Experiment================
+================Skip the 1 CV Experiment Fine Tuning================
+================ the 2 th CV Experiment ================ 
+Leave one Out Experiment : The 3 Part as the test
+[-] Target sampling weights:  [0.00064267 0.00066756 0.0007215  0.00062035 0.00055804 0.00056948
+ 0.00729927 0.01       0.00628931 0.00740741 0.00531915 0.00684932]
+Train data number :  10465
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1163
+Test data number :  5897
+================Skip the 2 CV Experiment================
+================Skip the 2 CV Experiment Fine Tuning================
+================ the 3 th CV Experiment ================ 
+Leave one Out Experiment : The 4 Part as the test
+[-] Target sampling weights:  [0.0006435  0.00067613 0.00071994 0.00061996 0.00055991 0.00057537
+ 0.00763359 0.00943396 0.00636943 0.00699301 0.00537634 0.00719424]
+Train data number :  10421
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1158
+Test data number :  6195
+================Skip the 3 CV Experiment================
+================Skip the 3 CV Experiment Fine Tuning================
+================ the 4 th CV Experiment ================ 
+Leave one Out Experiment : The 5 Part as the test
+[-] Target sampling weights:  [0.00064683 0.00067249 0.00072727 0.00062267 0.00056497 0.00057438
+ 0.00763359 0.01041667 0.00645161 0.00729927 0.00571429 0.00724638]
+Train data number :  10357
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1151
+Test data number :  6522
+================Skip the 4 CV Experiment================
+================Skip the 4 CV Experiment Fine Tuning================
+================ the 5 th CV Experiment ================ 
+Leave one Out Experiment : The 6 Part as the test
+[-] Target sampling weights:  [0.00064267 0.00067431 0.00073692 0.00063857 0.00058514 0.00057803
+ 0.00763359 0.01020408 0.00653595 0.00719424 0.00584795 0.0070922 ]
+Train data number :  10234
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1138
+Test data number :  7257
+================Skip the 5 CV Experiment================
+================Skip the 5 CV Experiment Fine Tuning================
+================ the 6 th CV Experiment ================ 
+Leave one Out Experiment : The 7 Part as the test
+[-] Target sampling weights:  [0.00063492 0.00066313 0.00073746 0.00063776 0.00058789 0.00059559
+ 0.00769231 0.01010101 0.00649351 0.00729927 0.00591716 0.00699301]
+Train data number :  10219
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1136
+Test data number :  7352
+================Skip the 6 CV Experiment================
+================Skip the 6 CV Experiment Fine Tuning================
+================ the 7 th CV Experiment ================ 
+Leave one Out Experiment : The 8 Part as the test
+[-] Target sampling weights:  [0.00063613 0.00067204 0.00074239 0.00063251 0.0005777  0.00058548
+ 0.00735294 0.00980392 0.00645161 0.00714286 0.00571429 0.00719424]
+Train data number :  10274
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1142
+Test data number :  7032
+================Skip the 7 CV Experiment================
+================Skip the 7 CV Experiment Fine Tuning================
+================ the 8 th CV Experiment ================ 
+Leave one Out Experiment : The 9 Part as the test
+[-] Target sampling weights:  [0.0006502  0.00067613 0.00074184 0.00064061 0.00058038 0.00059172
+ 0.00757576 0.00970874 0.00641026 0.00724638 0.00564972 0.0070922 ]
+Train data number :  10186
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1132
+Test data number :  7568
+================Skip the 8 CV Experiment================
+================Skip the 8 CV Experiment Fine Tuning================
+================ the 9 th CV Experiment ================ 
+Leave one Out Experiment : The 10 Part as the test
+[-] Target sampling weights:  [0.00064392 0.00067751 0.0007391  0.00063251 0.00057504 0.00058789
+ 0.00763359 0.01       0.00657895 0.00694444 0.00552486 0.00699301]
+Train data number :  10254
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1140
+Test data number :  7165
+================Skip the 9 CV Experiment================
+================Skip the 9 CV Experiment Fine Tuning================
+Use GPU: cuda:0
+clone the  wavefiler weight
+Wavelet Filtering Regularization
+Build the DeepConvLSTM model!
+Done!
+Parameter : 25071
+Set the seed as :  5
+ ----------------------- load all the data -------------------
+-----------------------Sliding file are generated -----------------------
+-----------------------Sliding file are generated -----------------------
+================ LOCV Mode ====================
+================ 10 CV ======================
+================ the 0 th CV Experiment ================ 
+Leave one Out Experiment : The 1 Part as the test
+[-] Target sampling weights:  [0.00065963 0.00069013 0.00072833 0.00060643 0.0005685  0.00057339
+ 0.00763359 0.01020408 0.00617284 0.00719424 0.00574713 0.00689655]
+Train data number :  10339
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1149
+Test data number :  6632
+================Skip the 0 CV Experiment================
+================Skip the 0 CV Experiment Fine Tuning================
+================ the 1 th CV Experiment ================ 
+Leave one Out Experiment : The 2 Part as the test
+[-] Target sampling weights:  [0.00064433 0.00068306 0.00072569 0.00060938 0.00056625 0.00056754
+ 0.008      0.00961538 0.00649351 0.00735294 0.00574713 0.00729927]
+Train data number :  10393
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1155
+Test data number :  6311
+================Skip the 1 CV Experiment================
+================Skip the 1 CV Experiment Fine Tuning================
+================ the 2 th CV Experiment ================ 
+Leave one Out Experiment : The 3 Part as the test
+[-] Target sampling weights:  [0.00065317 0.00067024 0.00071685 0.00061237 0.0005637  0.00056085
+ 0.00724638 0.00990099 0.00645161 0.00729927 0.00555556 0.00684932]
+Train data number :  10465
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1163
+Test data number :  5897
+================Skip the 2 CV Experiment================
+================Skip the 2 CV Experiment Fine Tuning================
+================ the 3 th CV Experiment ================ 
+Leave one Out Experiment : The 4 Part as the test
+[-] Target sampling weights:  [0.00064516 0.00068027 0.00072098 0.00061652 0.00055866 0.00057307
+ 0.00724638 0.00970874 0.00666667 0.00671141 0.00555556 0.00729927]
+Train data number :  10421
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1158
+Test data number :  6195
+================Skip the 3 CV Experiment================
+================Skip the 3 CV Experiment Fine Tuning================
+================ the 4 th CV Experiment ================ 
+Leave one Out Experiment : The 5 Part as the test
+[-] Target sampling weights:  [0.00064103 0.00069589 0.00072359 0.00061125 0.0005637  0.00057307
+ 0.00787402 0.01086957 0.00671141 0.00684932 0.00561798 0.00763359]
+Train data number :  10357
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1151
+Test data number :  6522
+================Skip the 4 CV Experiment================
+================Skip the 4 CV Experiment Fine Tuning================
+================ the 5 th CV Experiment ================ 
+Leave one Out Experiment : The 6 Part as the test
+[-] Target sampling weights:  [0.00064144 0.00068681 0.00072359 0.00062696 0.00058411 0.00058651
+ 0.00775194 0.0106383  0.00653595 0.00704225 0.00571429 0.00757576]
+Train data number :  10234
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1138
+Test data number :  7257
+================Skip the 5 CV Experiment================
+================Skip the 5 CV Experiment Fine Tuning================
+================ the 6 th CV Experiment ================ 
+Leave one Out Experiment : The 7 Part as the test
+[-] Target sampling weights:  [0.00063898 0.00068027 0.00071839 0.00063816 0.00058514 0.00059067
+ 0.0078125  0.0106383  0.00632911 0.00704225 0.00591716 0.00757576]
+Train data number :  10219
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1136
+Test data number :  7352
+================Skip the 6 CV Experiment================
+================Skip the 6 CV Experiment Fine Tuning================
+================ the 7 th CV Experiment ================ 
+Leave one Out Experiment : The 8 Part as the test
+[-] Target sampling weights:  [0.00064267 0.00068306 0.00072046 0.00062735 0.00057803 0.00058514
+ 0.00746269 0.01010101 0.00645161 0.00714286 0.00581395 0.0075188 ]
+Train data number :  10274
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1142
+Test data number :  7032
+================Skip the 7 CV Experiment================
+================Skip the 7 CV Experiment Fine Tuning================
+================ the 8 th CV Experiment ================ 
+Leave one Out Experiment : The 9 Part as the test
+[-] Target sampling weights:  [0.00065147 0.00068729 0.00072886 0.00063412 0.0005872  0.00058651
+ 0.00757576 0.01030928 0.00645161 0.0070922  0.00549451 0.00757576]
+Train data number :  10186
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1132
+Test data number :  7568
+================Skip the 8 CV Experiment================
+================Skip the 8 CV Experiment Fine Tuning================
+================ the 9 th CV Experiment ================ 
+Leave one Out Experiment : The 10 Part as the test
+[-] Target sampling weights:  [0.00064809 0.00068776 0.00072727 0.00062735 0.00058072 0.00058207
+ 0.00763359 0.01075269 0.00657895 0.00689655 0.00531915 0.00719424]
+Train data number :  10254
+The number of classes is :  12
+The input_length  is :  128
+The channel_in is :  6
+Validation data number :  1140
+Test data number :  7165
+================Skip the 9 CV Experiment================
+================Skip the 9 CV Experiment Fine Tuning================
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n561
+Job ID: 20948419
+Cluster: uc2
+User/Group: px3192/tm
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 20
+CPU Utilized: 00:02:33
+CPU Efficiency: 2.22% of 01:55:00 core-walltime
+Job Wall-clock time: 00:05:45
+Memory Utilized: 5.13 GB
+Memory Efficiency: 0.00% of 0.00 MB
