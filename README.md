@@ -22,25 +22,25 @@ TBD
 
 Designing an optimal, lightweight DL model requires careful consideration of the characteristics of target tasks and the factors which could reduce the inference time and operations number. Based on these two considerations, we developed the following guidelines to design lightweight HAR models:
 
-* G1: The Extraction of local temporal context should be enhanced. 
-* G2: Different sensor modalities should be treated unequally.
-* G3: Multi-modal fusion.
-* G4: Global temporal information extraction
-* G5: The temporal dimension should be reduced appropriately
-* G6: Channel management, from shallow to deep
+* **G1**: The Extraction of local temporal context should be enhanced. 
+* **G2**: Different sensor modalities should be treated unequally.
+* **G3**: Multi-modal fusion.
+* **G4**: Global temporal information extraction
+* **G5**: The temporal dimension should be reduced appropriately
+* **G6**: Channel management, from shallow to deep
 
 ## Individual Convolutional Subnet
 
-To enhance the local context, we applied a convolutional subnet to extract and fuse local initial features from the raw data (\textbf{G1}). Considering the varying contribution of different modalities, each channel is separately processed through four individual convolutional layers (\textbf{G2}). For each convolutional layer, ReLU nonlinearities and batch normalization~\cite{batchnorm} are used. Individual convolution means that the kernels have only 1D structure along the temporal axis (the kernel size is ${5\times1 }$). To reduce the temporal dimension (\textbf{G5}), the stride in each layer is set to $2$. All four convolutional layers have the same number of filters $F$. The output shape of this convolutional subnet is thus ${\mathbb{R}^{T^* \times C \times F}}$, where ${T^*}$ denotes the reduced temporal length. %Before learning the dependency between the channels, the local context is merged separately in each channel.  
+To enhance the local context, we applied a convolutional subnet to extract and fuse local initial features from the raw data (**G1**). Considering the varying contribution of different modalities, each channel is separately processed through four individual convolutional layers (**G2**). For each convolutional layer, ReLU nonlinearities and batch normalization~\cite{batchnorm} are used. Individual convolution means that the kernels have only 1D structure along the temporal axis (the kernel size is ${5\times1 }$). To reduce the temporal dimension (**G5**), the stride in each layer is set to $2$. All four convolutional layers have the same number of filters $F$. The output shape of this convolutional subnet is thus ${\mathbb{R}^{T^* \times C \times F}}$, where ${T^*}$ denotes the reduced temporal length. 
 
 ## Transformer encoder: Cross-Channel Info Interaction
 
-Previous work [1] successfully adopted self-attention mechanism to learn the collaboration between sensor channels. Inspired by this, we utilized one transformer encoder block~\cite{model:transformer} to learn the interaction, which is performed across the sensor channel dimension (\textbf{G2}) at each time step. The transformer encoder block consists of a scaled dot-product self-attention layer and a two-layers Fully Connected (FC) feed-forward network. The scaled dot-product self-attention is used to determine relative importance for each sensor channel by considering its similarity to all the other sensor channels. Subsequently, each sensor channel utilized these relative weights to aggregate the features from all the other sensor channels. %According to their importance, only relevant information from other sensor channels are aggregated. 
+Previous work [1] successfully adopted self-attention mechanism to learn the collaboration between sensor channels. Inspired by this, we utilized one transformer encoder block~\cite{model:transformer} to learn the interaction, which is performed across the sensor channel dimension (**G2**) at each time step. The transformer encoder block consists of a scaled dot-product self-attention layer and a two-layers Fully Connected (FC) feed-forward network. The scaled dot-product self-attention is used to determine relative importance for each sensor channel by considering its similarity to all the other sensor channels. Subsequently, each sensor channel utilized these relative weights to aggregate the features from all the other sensor channels. 
+
 Then the feed-forward layer is applied to each sensor channel, which further fused the aggregated feature of each sensor channel. Until now, the features of each channel are contextualized with the underlying cross-channel interactions. %After this stage, the shape of the data remains the same.
 
 ## Fully Connected Layer: Cross-Channel Info Fusion
-In order to fuse the learned features from all sensor channels (\textbf{G3}), we first vectorize these representations at each time step, ${\vX \in \mathbb{R}^{T^* \times C \times F} \  to \  \vX \in \mathbb{R}^{T^* \times CF}}$. Then one FC layer is applied to weighted summation of all the features. Compared to the attention mechanism used in~\cite{model:attnsense}, in which the features of same sensor channel share the same weights, FC layer allows different features of same sensor channel to have different weights. Such flexibility of the FC layer leads to more sufficient feature fusion. This FC layer works also as a bottleneck layer in the proposed TinyHAR, which reduce the feature dimension to ${F^*}$. %Compressing the dimensions also effectively reduces the size and computation of the subsequent RNN layers. 
-In our work we set ${F^* = 2F}$.
+In order to fuse the learned features from all sensor channels (**G3**), we first vectorize these representations at each time step, ${\vX \in \mathbb{R}^{T^* \times C \times F} \  to \  \vX \in \mathbb{R}^{T^* \times CF}}$. Then one FC layer is applied to weighted summation of all the features. Compared to the attention mechanism used in~\cite{model:attnsense}, in which the features of same sensor channel share the same weights, FC layer allows different features of same sensor channel to have different weights. Such flexibility of the FC layer leads to more sufficient feature fusion. This FC layer works also as a bottleneck layer in the proposed TinyHAR, which reduce the feature dimension to ${F^*}$. In our experiments we set ${F^* = 2F}$.
 
 ## One-Layer LSTM: Global Temporal Info Extraction
 After the features are fused across sensor and filter dimension, we obtain a sequence of refined feature vectors ${\in \mathbb{R}^{T^* \times F^*}}$ ready for sequence modeling. We then apply one LSTM layer to learn the global temporal dependencies.
