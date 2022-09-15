@@ -53,3 +53,6 @@ Given that not all time steps equally contribute to recognition of the undergoin
 # Experimental results
 
 [Please refer to our paper for details](https://publikationen.bibliothek.kit.edu/1000150216)
+
+![grafik](https://user-images.githubusercontent.com/566485/190351594-f6e4e478-b591-4b0e-93ad-a0ce20489c97.png)
+
