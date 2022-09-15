@@ -19,7 +19,7 @@ TBD
 
 # Network Design ([see paper for details](https://publikationen.bibliothek.kit.edu/1000150216))
 
-![grafik](https://user-images.githubusercontent.com/566485/190351410-a32f0056-be32-486a-9410-f87e46a435cd.png)
+![network design](https://user-images.githubusercontent.com/566485/190351410-a32f0056-be32-486a-9410-f87e46a435cd.png)
 
 
 Designing an optimal, lightweight DL model requires careful consideration of the characteristics of target tasks and the factors which could reduce the inference time and operations number. Based on these two considerations, we developed the following guidelines to design lightweight HAR models:
@@ -54,5 +54,5 @@ Given that not all time steps equally contribute to recognition of the undergoin
 
 [Please refer to our paper for details](https://publikationen.bibliothek.kit.edu/1000150216)
 
-![grafik](https://user-images.githubusercontent.com/566485/190351594-f6e4e478-b591-4b0e-93ad-a0ce20489c97.png)
+![results](https://user-images.githubusercontent.com/566485/190351810-d762c5db-4ac4-45fd-ab15-d14125f2b0e5.png)
 
